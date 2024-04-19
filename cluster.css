@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --index: calc(1vw + 1vh);
+    --color-header: #f4efec;
+    --color-text: #cdc6c3;
+    --algorithms-gap: calc(var(--index) * 8);
+    --pr-color: #fff;
+}
+@font-face {
+    font-family: Silkscreen regular;
+    src: url(../Font/Silkscreen-Regular.ttf);
+}
+@font-face{
+    font-family: Silkscreen bold;
+    src: url(../Font/Silkscreen-Bold.ttf);
+}
+body {
+    background-color: black;
+    background-size: 75px;
+    color: #fafafa;
+    font-family: "Silkscreen regular";
+    font-weight: 400;
+    font-style: normal;
+    overflow-x: hidden;
+}
+label{
+    position: absolute;
+    top: 45%;
+    right: 15%;
+}
+#num_cluster{
+    background-color: #cdc6c3;
+    position: absolute;
+    top: 45%;
+    right: 8%;
+    height: 20px;
+    width: 100px;
+    font-family: "Silkscreen regular";
+}
+canvas{  
+    background-color: white;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    border: solid grey;
+}
+
+#startButton{
+    font-family: "Silkscreen regular";
+    position: absolute;
+    height: 40px;
+    width: 100px;
+    top: 20%;
+    right: 15%;
+    background-color: #1D1F20;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+#clearButton{
+    font-family: "Silkscreen regular";
+    height: 40px;
+    width:100px;
+    position: absolute;
+    top: 30%;
+    right: 15%;
+    background-color: #1D1F20;
+    color: #FFFFFF;
+    border: none;
+    border-radius:  20px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    text-align:center;
+}
+
+#slider{
+    position: absolute;
+    top: 40%;
+    right: 14%;
+    color: grey;
+}
+
+

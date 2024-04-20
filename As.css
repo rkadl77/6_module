@@ -1,12 +1,14 @@
 /* styles.css */
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Silkscreen regular";
+    margin: 0;
+    color: #FFFFFF;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
+    background-color: #000;
 }
 
 canvas {
@@ -14,18 +16,53 @@ canvas {
 }
 
 button {
+    font-family: "Silkscreen regular";
     margin-top: 10px;
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #4CAF50;
+    background-color: #1D1F20;
     color: white;
     border: none;
+    border-radius: 20px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: gray;
 }
+
+#backButton{
+    font-family: "Silkscreen regular";
+    font-size: small;
+    text-align: center;
+    height: 80px;
+    width: 200px;;
+    position: absolute;
+    background-color: #1D1F20;
+    color: #FFFFFF;
+    border: none;
+    top: 5%;
+    left: 0;
+    border-radius:  20px;
+    cursor: pointer;
+    margin-top: 0%;
+  }
+  
+  #nextButton{
+    font-family: "Silkscreen regular";
+    height: 80px;
+    width: 200px;
+    position: absolute;
+    background-color: #1D1F20;
+    color: #FFFFFF;
+    border: none;
+    top: 90%;
+    right: 10%;
+    border-radius:  20px;
+    cursor: pointer;
+    text-align:center;
+    margin-top: 0%;
+  }
 
 .start {
     --start-color: #4CAF50; /* зеленая */

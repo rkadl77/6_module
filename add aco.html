@@ -2,8 +2,8 @@
 <html>
 
 <head>
-    <title>ACO Algorithm</title>
-    <link rel="stylesheet" href="aco.css">
+    <title>Ant Algorithm</title>
+    <link rel="stylesheet" href="CSS/ant.css">
 </head>
 
 <body>
@@ -13,14 +13,20 @@
         <input type="number" id="numIterations" value="100">
         <button onclick="startButton()">Start</button>
         <button onclick="clearButton()">Clear</button>
-        <div class="exit">
-            <a href="aco.html" class="exit1">Назад</a>
-        </div>
     </div>
     <div class="div1">
         <canvas id="myCanvas" width="500" height="385"></canvas>
     </div>
-    <script src="JS/aco.js"></script>
+    <form action = "index.html">
+        <button id="backButton">back to future</button>
+      </form>
+      <form action = "genetic.html">
+        <button id="previousButton">previous algorithm</button>
+      </form>
+      <form action = "tree.html">
+        <button id="nextButton">next algorithm</button>
+      </form>
+    <script src="JS/ant.js"></script>
 </body>
 
 </html>

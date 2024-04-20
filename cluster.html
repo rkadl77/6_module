@@ -10,10 +10,25 @@
     <title>Clustering</title>
 </head>
 <body>
+    <div class="text-block">
+        <h1>clustering algorithm</h1>
+    </div>
     <button id="startButton">start</button>
     <button id="clearButton">clear</button>
-    <input type="range" min="10" max="60" step="10" value= "10" id="slider" oninput="updateMatrix(), clearAll()">
+    <form action = "index.html">
+        <button id="backButton">back to future</button>
+    </form>
+    <form action = "index.html">
+        <button id="backButton">back to future</button>
+    </form>
+    <form action = "astar.html">
+        <button id="previousButton">previous algorithm</button>
+    </form>
+    <form action = "genetic.html">
+        <button id="nextButton">next algorithm</button>
+    </form>
+    <input type="range" min="10" max="60" step="10" value= "10" id="slider" oninput="clearAll()">
     <label for="num_cluster">enter the number of clusters</label>
-    <input type="number" id="num_cluster">
+    <input type="number" min = "0" max = "100" value = "0" id="num_cluster">
 </body>
 </html>

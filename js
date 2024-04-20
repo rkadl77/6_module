@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         smooth: 3,
         effects: true
     });
-
+ /*текстовые блоки*/   
     gsap.fromTo('.hero-section', {opacity: 0, y: 50}, {
         opacity: 1,
         y: 0,
@@ -31,47 +31,49 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     })
 
-    gsap.fromTo('.text-block__extra', {opacity: 1}, {
-        opacity: 0,
+    gsap.fromTo('.text-block__extra', {opacity: 0}, {
+        opacity: 1,
         scrollTrigger: {
             trigger: '.hero-section',
-            start: '1600',
-            end: '1850',
+            start: '1500',
+            end: '1650',
             scrub: true
         }
     })
-
-    let itemsL = gsap.utils.toArray('.algorithms__center .algorithms__left');
-    itemsL.forEach((item, index) => {
-        gsap.fromTo(item, {x: -100 * (index + 1), opacity: 0, scale: 0.8}, {
-            opacity: 1,
-            x: 0,
-            scale: 1,
-            duration: 1,
-            ease: 'power3.out',
-            scrollTrigger: {
-                trigger: item,
-                start: 'top center',
-                end: 'center center',
-                scrub: true
-            }
-        });
-    });
-
-    let itemsR = gsap.utils.toArray('.algorithms__center .algorithms__right');
-    itemsR.forEach((item, index) => {
-        gsap.fromTo(item, {x: 100 * (index + 1), opacity: 0, scale: 0.8}, {
-            opacity: 1,
-            x: 0,
-            scale: 1,
-            duration: 1,
-            ease: 'power3.out',
-            scrollTrigger: {
-                trigger: item,
-                start: 'top center',
-                end: 'center center',
-                scrub: true
-            }
-        });
-    });
+/*алгоритмы*/
+    gsap.fromTo('.accordion__img', {x: -250,opacity: 0}, {
+        opacity: 1, x: 50,
+        scrollTrigger: {
+            trigger: '.accordion__img',
+            end: '0',
+            scrub: true
+        }
+    })
+    
+    gsap.fromTo('.accordion__list', {x: 250,opacity: 0}, {
+        opacity: 1, x: -100,
+        scrollTrigger: {
+            trigger: '.accordion__list',
+            end: '0',
+            scrub: true
+        }
+    })
 })
+$(function () {
+        
+    'use strict';
+
+    function accordion() {
+        $('.accordion .accordion__item').on('click', function () {
+            const timeAnim = 400;
+            $('.accordion .accordion__item').removeClass("active").css({ 'pointer-events' : 'auto'});
+            $(this).addClass("active").css({ 'pointer-events' : 'none'});
+            
+            $('.accord__img').removeClass("active");
+            let id = $(this).data('id');
+            $('#' + id + '-img').addClass("active");
+        });
+        
+    }
+    accordion();
+});

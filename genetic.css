@@ -1,0 +1,27 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+}
+
+.canvas-container {
+  margin-bottom: 20px;
+  border: 1px solid #000;
+  display: inline-block;
+}
+
+canvas {
+  display: block;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+}

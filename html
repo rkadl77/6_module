@@ -10,53 +10,121 @@
     <script src="JS/libs/gsap/gsap.min.js" defer></script>
     <script src="JS/libs/gsap/ScrollSmoother.min.js" defer></script>
     <script src="JS/libs/gsap/ScrollTrigger.min.js" defer></script>
-    
+    <script src="JS/libs/gsap/jquery-3.1.1.min.js" defer></script>
     
     <script src="JS/script.js" defer></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
     
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
-    </style>
         
-
 </head>
 <body>
         <div class="wrapper">
             <div class="content">
+                
                 <header class="hero-section">
-                    <img data-speed=".6" class="hero" src="JS/gsap-public/PNG/HEADER.png" alt="alt">
+                    
+                    <img data-speed=".65" class="hero" src="PNG/hero.png" alt="alt">
 
                     <div class="container">
                         <div data-speed=".75" class="main-header">
                             <h1 class="main-title">Web-Project</h1>
                         </div>
                     </div>
+                    
                 </header>
 
                 <div data-speed=".75" class="text-block__main">
                         <h2 class="text-block__h">Creators:</h2>
                         <p class="text-block__p">Timur Fyatkhullin, Igor Maslakov </p>
                 </div>
+                
                 <div data-speed="1" class="text-block__extra">
                     <h2 class="text-block__h">To view the algorithms, you need to click on the image</h2>
                 </div>
-
-                <div class="algorithms">
-                    <div class="container">
-                        <main class="algorithms">
-                            <div class="algorithms__center">
-                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img src="JS/gsap-public/PNG/a-star.png" alt="" class="algorithms__left"></a>
-                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img src="JS/gsap-public/PNG/cluster.png" alt="" class="algorithms__right"></a>
-                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img src="JS/gsap-public/PNG/genom.png" alt="" class="algorithms__left"></a>
-                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img src="JS/gsap-public/PNG/ant.png" alt="" class="algorithms__right"></a>
-                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img src="JS/gsap-public/PNG/tree.png" alt="" class="algorithms__left"></a>
-                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img src="JS/gsap-public/PNG/network.png" alt="" class="algorithms__right"></a>
-                            </div>
-                        </main>
-                    </div>
+                    
+                <div class="accordion">
+                    
+                    <ul class="accordion__list">
+                     
+                        <li class="accordion__item active" data-id="1">
+                            <h3 class="accordion__header">
+                                
+                                <span class="accordion__bl">
+                                    <span class="accordion__bl-line"></span>
+                                    <span class="accordion__bl-line"></span>
+                                </span>
+                                <span class="accordion__title">a* algorithm</span>
+                            </h3>
+                        </li>
+                        
+                        <li class="accordion__item" data-id="2">
+                            <h3 class="accordion__header">
+                                
+                                <span class="accordion__bl">
+                                    <span class="accordion__bl-line"></span>
+                                    <span class="accordion__bl-line"></span>
+                                </span>
+                                <span class="accordion__title">clustering algorithm</span>
+                            </h3>
+                        </li>
+                        
+                        <li class="accordion__item" data-id="3">
+                            <h3 class="accordion__header">
+                                
+                                <span class="accordion__bl">
+                                    <span class="accordion__bl-line"></span>
+                                    <span class="accordion__bl-line"></span>
+                                </span>
+                                <span class="accordion__title">genetic algorithm</span>
+                            </h3>
+                        </li>
+                        
+                        <li class="accordion__item" data-id="4">
+                            <h3 class="accordion__header">
+                                
+                                <span class="accordion__bl">
+                                    <span class="accordion__bl-line"></span>
+                                    <span class="accordion__bl-line"></span>
+                                </span>
+                                <span class="accordion__title">ant algorithm</span>
+                            </h3>
+                        </li>
+                        
+                        <li class="accordion__item" data-id="5">
+                            <h3 class="accordion__header">
+                                
+                                <span class="accordion__bl">
+                                    <span class="accordion__bl-line"></span>
+                                    <span class="accordion__bl-line"></span>
+                                </span>
+                                <span class="accordion__title">decision tree</span>
+                            </h3>
+                        </li>
+                        
+                        <li class="accordion__item" data-id="6">
+                            <h3 class="accordion__header">
+                                
+                                <span class="accordion__bl">
+                                    <span class="accordion__bl-line"></span>
+                                    <span class="accordion__bl-line"></span>
+                                </span>
+                                <span class="accordion__title">neural network</span>
+                            </h3>
+                        </li>
+                        
+                    </ul>
+                    <div class="accordion__img">
+                        <a href="astar.html"><img id="1-img" src="PNG/a-star.png" alt="1" class="accord__img active"></a>
+                        <a href="cluster.html"><img id="2-img" src="PNG/cluster.png" alt="2" class="accord__img"></a>
+                        <a href="genetic.html"><img id="3-img" src="PNG/genom.png" alt="3" class="accord__img"></a>
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img id="4-img" src="PNG/ant.png" alt="4" class="accord__img"></a>
+                        <a href="tree.html"><img id="5-img" src="PNG/tree.png" alt="5" class="accord__img"></a>
+                        <a href="network.html"><img id="6-img" src="PNG/network.png" alt="6" class="accord__img"></a>
+                    </div> 
                 </div>
+                
             </div>
-        </div>
+            
+        </div>    
 </body>
 </html>
